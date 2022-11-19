@@ -15,7 +15,7 @@ var gameState = "PLAY";
 var restartImg;
 
 function preload() {
-  bgImage = loadImage("images/bgnew.jpg");
+  bgImage = loadImage("images/bg12.jpg");
   mario_running = loadAnimation(
     "images/mar1.png",
     "images/mar2.png",
@@ -182,7 +182,7 @@ function generateBricks() {
     var brick = createSprite(1200, 120, 40, 10);
     brick.y = random(50, 450);
     brick.addImage(brickImage);
-    brick.scale = 0.5;
+    brick.scale = 0.7;
     brick.velocityX = -5;
 
     brick.lifetime = 250;
