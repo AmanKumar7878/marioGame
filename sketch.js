@@ -14,6 +14,7 @@ var gameState = "PLAY";
 
 var restartImg;
 
+
 function preload() {
   bgImage = loadImage("images/bg12.jpg");
   mario_running = loadAnimation(
@@ -172,9 +173,9 @@ function draw() {
   }
 
   // Score Card
-  textSize(20);
-  fill("brown");
-  text("Coins Collected: " + coinScore, 500, 50);
+  textSize(25);
+  fill("blue");
+  text("Score : " + coinScore, 500, 50);
 }
 
 function generateBricks() {
@@ -227,6 +228,7 @@ function generateObstacles() {
 }
 
 function restartGame() {
+
   gameState = "PLAY";
 
   obstaclesGroup.destroyEach();
