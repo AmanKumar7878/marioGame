@@ -93,7 +93,7 @@ function draw() {
 
   if (gameState == "PLAY") {
     // Make background Move
-    bg.velocityX = -5;
+    bg.velocityX = -9;
     if (bg.x < 100) {
       bg.x = bg.width / 4;
     }
