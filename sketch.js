@@ -184,7 +184,7 @@ function generateBricks() {
     brick.y = random(50, 450);
     brick.addImage(brickImage);
     brick.scale = 0.7;
-    brick.velocityX = -5;
+    brick.velocityX = -9;
 
     brick.lifetime = 250;
 
@@ -198,7 +198,7 @@ function generateCoins() {
     coin.y = Math.round(random(80, 350));
     coin.addAnimation("coin", coinImage);
     coin.scale = 0.1;
-    coin.velocityX = -3;
+    coin.velocityX = -6;
 
     coin.lifetime = 500;
 
@@ -209,7 +209,7 @@ function generateCoins() {
 function generateObstacles() {
   if (frameCount % 100 === 0) {
     var obstacle = createSprite(1200, 555, 10, 40);
-    obstacle.velocityX = -5;
+    obstacle.velocityX = -9;
     obstacle.scale = 0.1;
     var rand = Math.round(random(1, 2));
     switch (rand) {
